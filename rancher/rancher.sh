@@ -19,6 +19,5 @@ mkdir -p ~/.local/bin
 mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 kubectl version --client --output=yaml
-git clone git@github.com:jonathanbaraldi/devops.git
-docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/rancher -p 80:80 -p 443:443 --privileged rancher/rancher:v2.4.18-rc1-linux-amd64
-docker logs  2a8fed78331b  2>&1 | grep "Bootstrap Password:"
+#docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/rancher -p 80:80 -p 443:443 --privileged rancher/rancher:v2.4.18-rc1-linux-amd64
+#docker logs  2a8fed78331b  2>&1 | grep "Bootstrap Password:"
